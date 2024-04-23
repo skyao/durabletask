@@ -662,6 +662,7 @@ namespace DurableTask.Core
                     OrchestrationInstance = new OrchestrationInstance
                     {
                         InstanceId = orchestrationInstanceId,
+                        
                         // to ensure that the event gets raised on the running
                         // orchestration instance, null the execution id
                         // so that it will find out which execution

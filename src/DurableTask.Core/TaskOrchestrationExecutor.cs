@@ -131,7 +131,7 @@ namespace DurableTask.Core
                                 this.context.CurrentUtcDateTime = decisionStartedEvent.Timestamp;
                                 continue;
                             }
-                            
+
                             this.ProcessEvent(historyEvent);
                             historyEvent.IsPlayed = true;
                         }
